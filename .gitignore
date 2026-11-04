@@ -1,0 +1,70 @@
+# ============================================================================
+# Python Bytecode & Compiled Files
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ============================================================================
+# Virtual Environments & Packaging
+# ============================================================================
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+poetry.lock
+pip-log.txt
+
+# ============================================================================
+# Django Specific Exclusions
+# ============================================================================
+# Local development database (never commit production data)
+db.sqlite3
+*.sqlite3
+
+# User-uploaded files (Media) and collected assets
+media/
+staticfiles/
+static_cdn/
+
+# Local settings overrides and instance data
+local_settings.py
+secrets.py
+
+# ============================================================================
+# Environment Variables & Secrets (Crucial to prevent leaks)
+# ============================================================================
+.env
+.env.*
+!.env.example
+
+# ============================================================================
+# Logs, Testing & Code Quality
+# ============================================================================
+*.log
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.mypy_cache/
+
+# ============================================================================
+# IDE / Text Editors Configurations
+# ============================================================================
+# VS Code
+.vscode/
+
+# PyCharm / IntelliJ
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
